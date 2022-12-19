@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Open_Lab_04._10
 {
@@ -6,7 +7,9 @@ namespace Open_Lab_04._10
     {
         public float Average(int[] nums)
         {
-            throw new NotImplementedException();
+            int result = nums.Sum();
+            float resultfinal =(float)result/nums.Length;
+            return resultfinal;
         }
     }
 }
